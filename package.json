@@ -1,0 +1,71 @@
+{
+  "name": "taro-code",
+  "displayName": "taro-code",
+  "description": "",
+  "version": "0.0.2",
+  "repository": "git+https://github.com/username/xxx.git",
+  "publisher": "jerrycc",
+  "scripts": {
+    "code": "node ./generateSnippetsConfig.js",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test",
+    "publish": "vsce package && vsce publish patch"
+  },
+  "keywords": [],
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/xxx/issues"
+  },
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:html"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/tarocode.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/tarocode.code-snippets"
+      }
+    ],
+    "commands": [
+      {
+        "command": "taro-code.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "taro-code.helloWorld",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.89.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}

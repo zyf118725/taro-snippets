@@ -1,0 +1,30 @@
+{
+  "Business: zyfbtn": {
+    "prefix": "zyfbtn",
+    "body": [
+      "<div>",
+      "    <div>我是zyfbtn11</div>",
+      "    <div>我是zyfbtn</div>",
+      "    <div>我是zyfbtn</div>",
+      "    <div>fasdf</div>",
+      "  </div>"
+    ],
+    "description": ""
+  }
+}
+// {
+//   "Business: zyfbtn": {
+//     "prefix": "zyfbtn",
+//     "body": [
+//          "<gkButton",
+//              "\t color=\"\"",
+//               "\t size=\"\"",
+//               "\t label=\"\"",
+//               "\t @click=\"\"",
+//             ">",
+//             "</gkButton>"
+//        
+//     ],
+//      "description": "按钮组件:props 参数：tag、color、size、label、disabled、useLock、lockLabel 参数"
+//   }
+// }

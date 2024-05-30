@@ -1,5 +1,6 @@
 # 打包
-pnpm build
+yarn build
 
 # 发布
-pnpm publish
+vsce publish
+
